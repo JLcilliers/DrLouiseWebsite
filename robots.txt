@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /private/
+
+Sitemap: https://cosmeticdental.co.za/sitemap.xml
+
+# Crawl-delay for bots
+User-agent: *
+Crawl-delay: 1
+
+# Allow search engines to index images
+User-agent: Googlebot-Image
+Allow: /assets/images/
+
+User-agent: Bingbot
+Allow: /
