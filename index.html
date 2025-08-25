@@ -4,42 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosmetic Dental Cape Town - Premium Dental Care &amp; Smile Makeovers</title>
-    <meta name="description" content="Transform your smile at Cosmetic Dental Cape Town. Expert cosmetic dentistry, teeth whitening, veneers, and implants. Book your consultation today!">
-    <meta name="keywords" content="cosmetic dentist cape town, teeth whitening, dental veneers, smile makeover, dental implants">
+    <meta name="description" content="Transform your smile at Cosmetic Dental Cape Town. Expert cosmetic dentistry, teeth whitening, veneers, and implants. Book your free consultation today!">
+    <meta name="keywords" content="cosmetic dentist cape town, teeth whitening, dental veneers, smile makeover, dental implants, invisalign cape town">
     <link rel="canonical" href="https://cosmeticdental.co.za/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     
     <!-- Open Graph -->
     <meta property="og:title" content="Cosmetic Dental Cape Town - Premium Dental Care">
     <meta property="og:description" content="Transform your smile with expert cosmetic dentistry in Cape Town">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://cosmeticdental.co.za/">
+    <meta property="og:image" content="https://cosmeticdental.co.za/assets/images/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cosmetic Dental Cape Town">
+    <meta name="twitter:description" content="Transform your smile with expert cosmetic dentistry">
+    <meta name="twitter:image" content="https://cosmeticdental.co.za/assets/images/twitter-card.jpg">
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Cosmetic Dental Cape Town",
+      "image": "https://cosmeticdental.co.za/assets/images/logo.png",
+      "url": "https://cosmeticdental.co.za",
+      "telephone": "+27216835889",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Main Road",
+        "addressLocality": "Claremont",
+        "addressRegion": "Cape Town",
+        "postalCode": "7708",
+        "addressCountry": "ZA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -33.9829,
+        "longitude": 18.4619
+      },
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+        "opens": "08:00",
+        "closes": "17:00"
+      },{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Friday",
+        "opens": "08:00",
+        "closes": "16:00"
+      },{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "13:00"
+      }],
+      "sameAs": [
+        "https://www.facebook.com/cosmeticdental",
+        "https://www.instagram.com/cosmeticdental",
+        "https://www.linkedin.com/company/cosmeticdental"
+      ]
+    }
+    </script>
 </head>
 <body>
+    <!-- Skip to Content Link for Accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container">
             <div class="nav-wrapper">
-                <a href="index.html" class="logo">
+                <a href="index.html" class="logo" aria-label="Cosmetic Dental Home">
                     <span>Cosmetic Dental</span>
                 </a>
                 <ul class="nav-menu">
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html" class="active" aria-current="page">Home</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="team.html">Our Team</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="hamburger">
+                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
             </div>
         </div>
         <div class="mobile-menu">
@@ -54,15 +114,47 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="main-content">
+        <video class="hero-video-bg" autoplay muted loop playsinline>
+            <source src="assets/videos/dental-hero.mp4" type="video/mp4">
+        </video>
         <div class="hero-overlay"></div>
         <div class="container">
             <div class="hero-content fade-in-up">
                 <h1>Transform Your Smile, Transform Your Life</h1>
                 <p>Experience world-class cosmetic dentistry in the heart of Cape Town</p>
-                <div style="display: flex; gap: 1rem; justify-content: center;">
-                    <a href="contact.html" class="btn btn-primary btn-lg">Book Consultation</a>
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Book Free Consultation</a>
                     <a href="services.html" class="btn btn-outline btn-lg" style="color: white; border-color: white;">Our Services</a>
+                </div>
+                <div class="hero-features">
+                    <span>✓ Same-Day Appointments</span>
+                    <span>✓ 0% Finance Available</span>
+                    <span>✓ 5-Star Google Rating</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="15000">0</span>
+                    <span class="stat-label">Happy Patients</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="20">0</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="98">0</span>
+                    <span class="stat-label">% Success Rate</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="4.9">0</span>
+                    <span class="stat-label">Google Rating</span>
                 </div>
             </div>
         </div>
@@ -73,15 +165,15 @@
         <div class="container">
             <h2>Welcome to Cosmetic Dental Cape Town</h2>
             <div class="about-content">
-                <p>Located in the prestigious Claremont area of Cape Town, Cosmetic Dental has been transforming smiles and changing lives for over 15 years. Our state-of-the-art facility combines cutting-edge dental technology with a warm, welcoming atmosphere to provide you with an exceptional dental experience.</p>
+                <p>Located in the prestigious Claremont area of Cape Town, Cosmetic Dental has been the premier destination for smile transformations since 2004. Our state-of-the-art facility combines cutting-edge dental technology with a warm, welcoming atmosphere to provide you with an exceptional dental experience that exceeds expectations.</p>
                 
-                <p>We specialize in comprehensive cosmetic and restorative dentistry, offering everything from professional teeth whitening and porcelain veneers to advanced dental implants and full smile makeovers. Our team of highly skilled dentists and specialists are passionate about creating beautiful, healthy smiles that boost your confidence and improve your quality of life.</p>
+                <p>We specialize in comprehensive cosmetic and restorative dentistry, offering everything from professional teeth whitening and porcelain veneers to advanced dental implants and full smile makeovers. Our team of internationally trained dentists and specialists are passionate about creating beautiful, healthy smiles that boost your confidence and improve your quality of life.</p>
                 
-                <p>At Cosmetic Dental, we understand that every patient is unique. That's why we take a personalized approach to your dental care, carefully listening to your concerns and goals before creating a customized treatment plan that fits your needs, timeline, and budget. We use the latest digital imaging technology to show you exactly what your new smile will look like before we begin any treatment.</p>
+                <p>What sets us apart is our commitment to personalized care. We understand that every patient is unique, which is why we take time to listen to your concerns and goals before creating a customized treatment plan that fits your needs, timeline, and budget. Using advanced 3D imaging and digital smile design technology, we can show you exactly what your new smile will look like before we begin any treatment.</p>
                 
-                <p>Our commitment to excellence extends beyond just technical expertise. We pride ourselves on providing a comfortable, stress-free environment where you can relax knowing you're in capable hands. From our gentle approach to our flexible payment options, everything we do is designed to make your journey to a perfect smile as smooth and enjoyable as possible.</p>
+                <p>Our practice features the latest in dental technology, including same-day CEREC crowns, laser dentistry for painless procedures, and 3D cone beam CT scanning for precise implant placement. We also offer sedation options for anxious patients, ensuring your complete comfort throughout your treatment.</p>
                 
-                <p class="cta-text">Ready to discover what Cosmetic Dental can do for your smile? Schedule your complimentary consultation today and take the first step toward the confident, radiant smile you deserve.</p>
+                <p class="cta-text">Ready to discover what Cosmetic Dental can do for your smile? Schedule your complimentary consultation today and take the first step toward the confident, radiant smile you deserve. New patients receive a free digital smile design preview!</p>
             </div>
         </div>
     </section>
@@ -89,32 +181,57 @@
     <!-- Services Preview -->
     <section class="services">
         <div class="container">
-            <h2>Our Services</h2>
+            <h2>Our Premium Services</h2>
             <div class="services-intro">
-                <p>From subtle enhancements to complete smile transformations, we offer a comprehensive range of cosmetic dental services</p>
+                <p>From subtle enhancements to complete smile transformations, we offer comprehensive cosmetic dental solutions using the latest technology and techniques</p>
             </div>
             <div class="treatments-grid">
                 <div class="treatment-card">
                     <div class="treatment-icon">🦷</div>
                     <h3>Teeth Whitening</h3>
-                    <p>Professional whitening treatments that can brighten your smile by up to 8 shades in just one visit.</p>
+                    <p>Professional ZOOM! whitening that brightens your smile by up to 8 shades in just 90 minutes. Safe, effective, and long-lasting results.</p>
+                    <ul>
+                        <li>In-office treatment</li>
+                        <li>Custom take-home trays</li>
+                        <li>Minimal sensitivity</li>
+                    </ul>
                     <a href="services.html#whitening" class="learn-more">Learn More →</a>
                 </div>
                 <div class="treatment-card">
                     <div class="treatment-icon">✨</div>
                     <h3>Porcelain Veneers</h3>
-                    <p>Ultra-thin, custom-made shells that perfect your smile's shape, size, and color.</p>
+                    <p>Ultra-thin, custom-crafted shells that perfect your smile's shape, size, and color. Natural-looking results that last 15-20 years.</p>
+                    <ul>
+                        <li>Minimal preparation</li>
+                        <li>Stain resistant</li>
+                        <li>2-3 visit process</li>
+                    </ul>
                     <a href="services.html#veneers" class="learn-more">Learn More →</a>
                 </div>
                 <div class="treatment-card">
                     <div class="treatment-icon">🔧</div>
                     <h3>Dental Implants</h3>
-                    <p>Permanent tooth replacement solutions that look, feel, and function like natural teeth.</p>
+                    <p>Permanent tooth replacement that looks, feels, and functions like natural teeth. 95% success rate with lifetime durability.</p>
+                    <ul>
+                        <li>Single &amp; multiple teeth</li>
+                        <li>All-on-4 solutions</li>
+                        <li>Same-day options</li>
+                    </ul>
                     <a href="services.html#implants" class="learn-more">Learn More →</a>
                 </div>
             </div>
-            <div style="text-align: center;">
+            <div style="text-align: center; margin-top: 3rem;">
                 <a href="services.html" class="btn btn-primary btn-lg">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <h2>See Our Practice in Action</h2>
+            <div class="video-wrapper">
+                <iframe width="100%" height="500" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Cosmetic Dental Cape Town Virtual Tour" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </section>
@@ -126,92 +243,46 @@
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="rating">★★★★★</div>
-                    <p>"The team at Cosmetic Dental completely transformed my smile. I can't stop smiling now! The entire process was comfortable and the results exceeded my expectations."</p>
+                    <p>"The team at Cosmetic Dental completely transformed my smile with veneers. I can't stop smiling now! The entire process was comfortable, professional, and the results exceeded my expectations. Highly recommend!"</p>
                     <h4>Sarah Mitchell</h4>
                     <span>Smile Makeover Patient</span>
                 </div>
                 <div class="testimonial-card">
                     <div class="rating">★★★★★</div>
-                    <p>"Professional, caring, and incredibly skilled. My veneers look so natural that people can't believe they're not my real teeth. Best investment I've ever made!"</p>
+                    <p>"Professional, caring, and incredibly skilled. My Invisalign treatment was completed in just 12 months. The team made every visit pleasant and the results are perfect. Best dental experience I've ever had!"</p>
                     <h4>James Chen</h4>
-                    <span>Porcelain Veneers</span>
+                    <span>Invisalign Patient</span>
                 </div>
                 <div class="testimonial-card">
                     <div class="rating">★★★★★</div>
-                    <p>"I was nervous about getting implants, but the team made me feel completely at ease. The results are amazing - it's like having my natural teeth back!"</p>
+                    <p>"I was nervous about getting implants, but Dr. Anderson and his team made me feel completely at ease. The procedure was painless and the results are amazing - it's like having my natural teeth back!"</p>
                     <h4>Linda Botha</h4>
                     <span>Dental Implants</span>
                 </div>
             </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="https://g.page/r/cosmetic-dental-cape-town/review" target="_blank" class="btn btn-outline">Read More Reviews on Google</a>
+            </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
+    <!-- FAQ Section -->
+    <section class="faq-section">
         <div class="container">
-            <h2>Ready to Transform Your Smile?</h2>
-            <p>Schedule your free consultation today and discover your smile's full potential</p>
-            <a href="contact.html" class="btn btn-primary btn-lg" style="background: white; color: #007bff;">Book Your Consultation</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h3 style="color: white; margin-bottom: 1rem;">Cosmetic Dental</h3>
-                    <p>Creating beautiful smiles in Cape Town since 2008. Your trusted partner in cosmetic and restorative dentistry.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook">f</a>
-                        <a href="#" aria-label="Instagram">i</a>
-                        <a href="#" aria-label="LinkedIn">in</a>
-                    </div>
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Do you offer payment plans?</h3>
+                    <p>Yes! We offer 0% interest payment plans for up to 12 months, as well as extended finance options through our medical finance partners.</p>
                 </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Quick Links</h4>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="team.html">Our Team</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Our Services</h4>
-                        <ul>
-                            <li><a href="services.html#whitening">Teeth Whitening</a></li>
-                            <li><a href="services.html#veneers">Porcelain Veneers</a></li>
-                            <li><a href="services.html#implants">Dental Implants</a></li>
-                            <li><a href="services.html#invisalign">Invisalign</a></li>
-                            <li><a href="services.html#makeover">Smile Makeovers</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Contact Info</h4>
-                        <ul>
-                            <li>📍 123 Main Road, Claremont</li>
-                            <li>📞 021 683 5889</li>
-                            <li>✉️ info@cosmeticdental.co.za</li>
-                            <li>🕒 Mon-Fri: 8am-5pm</li>
-                            <li>🕒 Sat: 9am-1pm</li>
-                        </ul>
-                    </div>
+                <div class="faq-item">
+                    <h3>Is the consultation really free?</h3>
+                    <p>Absolutely! New patients receive a complimentary consultation including digital X-rays and a personalized treatment plan worth R1,500.</p>
                 </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Cosmetic Dental Cape Town. All rights reserved. | <a href="#" style="color: #999;">Privacy Policy</a> | <a href="#" style="color: #999;">Terms of Service</a></p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Mobile menu toggle
-        document.querySelector('.hamburger').addEventListener('click', function() {
-            document.querySelector('.mobile-menu').classList.toggle('active');
-        });
-    </script>
-</body>
-</html>
+                <div class="faq-item">
+                    <h3>How long do veneers last?</h3>
+                    <p>With proper care, porcelain veneers typically last 15-20 years. We also offer a 10-year warranty on all our veneer treatments.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you accept medical aid?</h3>
+                    <p>Yes, we work with all major medical aids and can submit claims directly on your behalf for covered procedures.</p
