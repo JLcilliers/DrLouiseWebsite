@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Section Check</title>
+</head>
+<body>
+    <h1>Testing Section Visibility</h1>
+    <script>
+        fetch('index.html')
+            .then(response => response.text())
+            .then(html => {
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                const sections = doc.querySelectorAll('section');
+                console.log(`Found ${sections.length} sections:`);
+                
+                sections.forEach((section, index) => {
+                    const id = section.id || 'no-id';
+                    const className = section.className || 'no-class';
+                    const textLength = section.textContent.trim().length;
+                    console.log(`Section ${index + 1}: id="${id}", class="${className}", content-length=${textLength}`);
+                });
+                
+                // Check for specific issues
+                const hero = doc.querySelector('.hero');
+                if (hero) {
+                    console.log('Hero content:', hero.innerHTML.substring(0, 200));
+                }
+            });
+    </script>
+</body>
+</html>
