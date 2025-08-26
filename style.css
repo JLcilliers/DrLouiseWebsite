@@ -64,47 +64,71 @@ body {
     padding: 0 20px;
 }
 
-/* Scroll Animations */
+/* Scroll Animations - Graceful degradation if JS fails */
 .fade-in {
-    opacity: 0;
-    transform: translateY(30px);
+    opacity: 1;
+    transform: translateY(0);
     transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.fade-in.visible {
+.js-enabled .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.fade-in.visible,
+.js-enabled .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
 }
 
 .fade-in-left {
-    opacity: 0;
-    transform: translateX(-30px);
+    opacity: 1;
+    transform: translateX(0);
     transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.fade-in-left.visible {
+.js-enabled .fade-in-left {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+
+.fade-in-left.visible,
+.js-enabled .fade-in-left.visible {
     opacity: 1;
     transform: translateX(0);
 }
 
 .fade-in-right {
-    opacity: 0;
-    transform: translateX(30px);
+    opacity: 1;
+    transform: translateX(0);
     transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.fade-in-right.visible {
+.js-enabled .fade-in-right {
+    opacity: 0;
+    transform: translateX(30px);
+}
+
+.fade-in-right.visible,
+.js-enabled .fade-in-right.visible {
     opacity: 1;
     transform: translateX(0);
 }
 
 .scale-in {
-    opacity: 0;
-    transform: scale(0.9);
+    opacity: 1;
+    transform: scale(1);
     transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.scale-in.visible {
+.js-enabled .scale-in {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.scale-in.visible,
+.js-enabled .scale-in.visible {
     opacity: 1;
     transform: scale(1);
 }
@@ -759,9 +783,9 @@ body {
 .treatment-description {
     font-size: 0.95rem;
     color: var(--text-dark);
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
+    opacity: 1;
+    max-height: auto;
+    overflow: visible;
     transition: all 0.3s;
 }
 
@@ -1053,6 +1077,7 @@ body {
     font-weight: 600;
     opacity: 0;
     transition: var(--transition);
+    pointer-events: none;
 }
 
 .gallery-item:hover::after {
